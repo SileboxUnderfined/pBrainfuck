@@ -19,7 +19,7 @@
 9. `]` - end loop.
 ### Methods
 1. `process_cmd(cmd: str)` - execute `cmd` command
-2. `start_loop(instructions: str, pointer_to_check: int = -1)` - start new loop and execute every cmd from `instructions` string. If `pointer_to_check` then execute all commands from `instructions` one time. Otherwise, execute commands, while value from `memory` cell on `pointer` address will not be equal 0.
+2. `start_loop(instructions: str, pointer_to_check: int = -1)` - start new loop and execute every cmd from `instructions` string. If `pointer_to_check` equal -1 then execute all commands from `instructions` one time. Otherwise, execute commands, while value from `memory` cell on `pointer` address will not be equal 0.
 3. `readfile(filename: str)` - read all instructions from `filename` file and call `start_loop`
 4. `readline(line: str)` - call `start_loop`. `instructions = line`
 
